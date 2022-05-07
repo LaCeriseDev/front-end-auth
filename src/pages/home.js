@@ -1,8 +1,11 @@
 import React from 'react'
+import Log from '../components/log/index';
 
 const Home = () => {
 return(
-  <div>home</div>
+  <div>
+    <Log signin={true} signup={false} />
+  </div>
   )
 }
 export default Home

@@ -3,7 +3,7 @@ import React from 'react'
 import { BrowserRouter, Routes as Router, Route, Navigate } from 'react-router-dom' // react router v6
 // pages
 import Home from '../../pages/home'
-import Page from '../../pages/page'
+import Profil from '../../pages/profil'
 
 // route
 const index = () => {
@@ -12,7 +12,7 @@ return(
     <Router>
       <Route path="/" exact element={<Home/>} />
       <Route path="*" element={<Navigate to="/" replace/>}/>
-      <Route path="/Page"  element={<Page/>} />
+      <Route path="/profil"  element={<Profil/>} />
     </Router>
   </BrowserRouter>
   )
